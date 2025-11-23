@@ -126,19 +126,3 @@ for i, (_, row) in enumerate(top_movies.iterrows()):
         st.markdown("</div>", unsafe_allow_html=True)
 
 
-# for _, row in top_movies.iterrows():
-#     col1, col2 = st.columns([1, 4])
-
-#     with col1:
-#         poster = row.get("poster_path")
-#         if isinstance(poster, str) and len(poster) > 3:
-#             st.image(f"https://image.tmdb.org/t/p/w500{poster}", width=120)
-#         else:
-#             st.write("No Poster")
-
-#     with col2:
-#         st.markdown(f"**{row.title}**  \n⭐ {row.vote_average:.1f}")
-#         st.write(row.genres)
-
-
-# st.sidebar.markdown(f"📦 Total Movies Loaded: **{len(df)}**")
